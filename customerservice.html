@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="side-nav">
+        <a href="#" id="homeBtn" class="nav-link ">HOME</a>
+        <a href="#" id="accountBtn" class="nav-link">ACCOUNT</a>
+        <a href="#" id="requestBtn" class="nav-link">REQUEST</a>
+        <a href="#" id="scheduleBtn" class="nav-link">SCHEDULE</a>
+        <a href="#" id="eventBtn" class="nav-link">EVENT</a>
+        <a href="#" id="servicesBtn" class="nav-link">SERVICES</a>
+        <a href="#" id="customerBtn" class="nav-link active">CUSTOMER SERVICE</a>
+        <a href="#" id="contactBtn" class="nav-link " >CONTACT SERVICE</a>
+        <a href="#" id="logoutBtn" class="nav-link logout">Logout</a>
+    </div>
+
+    <div class="content">
+        <main>
+            <h2>Send a Message</h2>
+            <form id="contact-form" class="message-form"> 
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label> 
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <h2>Address Your Concern</h2>
+            <p>If you have any concerns or issues, please feel free to contact us using the information below:</p>
+        </main>
+
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <ul>
+                <li><i class="fas fa-envelope"></i> Email: <a href="mailto:galamiton.vincejeus@gmail.com"
+                        target="_blank">Gmail</a></li>
+                <li><i class="fas fa-phone"></i> Phone:09652446333</li>
+                <li><i class="fab fa-facebook"></i><a href="https://www.facebook.com/profile.php?id=100092391802135"
+                        target="_blank">FACEBOOK</a></li>
+            </ul>
+            <div class="footer-content">
+                <p class="year">&copy; 2024 Created by <a href="https://www.facebook.com/Darkcrow13/" class="link" target="_blank">Vince Jeus Galamiton</a></p>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="confirmationMessage"></p>
+        </div>
+    </div>
+
+    <script src="home1.js"></script>
+    <script src="customerservice.js"></script>
+</body>
+
+</html>
